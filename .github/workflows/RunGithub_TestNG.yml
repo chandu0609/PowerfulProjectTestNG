@@ -2,9 +2,10 @@ name: JAVA CI with MAVEN TestNG
 
 on:
    push:
-     branches: ["master","chandra_dev"]
+     branches: ["master"]
    pull_request:
-     branches: ["master","chandra_dev"]
+     branches: ["master"]
+   workflow_dispatch:  
 
 jobs:
    build:
