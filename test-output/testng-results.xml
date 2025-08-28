@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-17T18:40:15 PDT" name="Suite" finished-at="2025-08-17T18:41:22 PDT" duration-ms="67226">
+    <groups>
+      <group name="regression">
+        <method signature="AllControlsDashboardTest.inputDiffControls(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" name="inputDiffControls" class="com.qa.Tests.AllControlsDashboardTest"/>
+        <method signature="LoginTest.forgotPasswordLinkExists()[pri:1, instance:com.qa.Tests.LoginTest@3c0fae6c]" name="forgotPasswordLinkExists" class="com.qa.Tests.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="AllControlsDashboardTest.Login(java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" name="Login" class="com.qa.Tests.AllControlsDashboardTest"/>
+        <method signature="AllControlsLogin.inputSimpleControls(java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsLogin@5cc126dc]" name="inputSimpleControls" class="com.qa.Tests.AllControlsLogin"/>
+        <method signature="LoginTest.onionToolWebTitle()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" name="onionToolWebTitle" class="com.qa.Tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2025-08-17T18:40:15 PDT" name="Test" finished-at="2025-08-17T18:41:22 PDT" duration-ms="67226">
+      <class name="com.qa.Tests.AllControlsDashboardTest">
+        <test-method is-config="true" signature="setUpControlsPage()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:40:57 PDT" name="setUpControlsPage" finished-at="2025-08-17T18:40:57 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpControlsPage -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:40:57 PDT" name="setupDriver" finished-at="2025-08-17T18:41:00 PDT" duration-ms="2719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="Login(java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:00 PDT" name="Login" data-provider="loginData" finished-at="2025-08-17T18:41:01 PDT" duration-ms="784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chandra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chandra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:01 PDT" name="tearDownDriver" finished-at="2025-08-17T18:41:01 PDT" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:01 PDT" name="setupDriver" finished-at="2025-08-17T18:41:05 PDT" duration-ms="3097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="inputDiffControls(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:05 PDT" name="inputDiffControls" data-provider="InputData" finished-at="2025-08-17T18:41:09 PDT" duration-ms="4268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chandra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[w545345gdsgdgdfgd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chandracomment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Subscribe newsletter]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2011-08-07]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Drag 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputDiffControls -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:09 PDT" name="tearDownDriver" finished-at="2025-08-17T18:41:09 PDT" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:09 PDT" name="setupDriver" finished-at="2025-08-17T18:41:12 PDT" duration-ms="2346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="inputDiffControls(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:12 PDT" name="inputDiffControls" data-provider="InputData" finished-at="2025-08-17T18:41:15 PDT" duration-ms="3573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swetha]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[w545345gdsgdgdfgd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[swethacomment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Agree to terms]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2011-08-07]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Drag 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputDiffControls -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:15 PDT" name="tearDownDriver" finished-at="2025-08-17T18:41:15 PDT" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:15 PDT" name="setupDriver" finished-at="2025-08-17T18:41:18 PDT" duration-ms="2191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="inputDiffControls(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:18 PDT" name="inputDiffControls" data-provider="InputData" finished-at="2025-08-17T18:41:21 PDT" duration-ms="3859" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Karthik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[w545345gdsgdgdfgd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[karthikcomment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Subscribe newsletter]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2011-08-07]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Drag 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputDiffControls -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.AllControlsDashboardTest@625e134e]" started-at="2025-08-17T18:41:21 PDT" name="tearDownDriver" finished-at="2025-08-17T18:41:22 PDT" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- com.qa.Tests.AllControlsDashboardTest -->
+      <class name="com.qa.Tests.AllControlsLogin">
+        <test-method is-config="true" signature="setUpControlsPage()[pri:0, instance:com.qa.Tests.AllControlsLogin@5cc126dc]" started-at="2025-08-17T18:40:54 PDT" name="setUpControlsPage" finished-at="2025-08-17T18:40:54 PDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpControlsPage -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.qa.Tests.AllControlsLogin@5cc126dc]" started-at="2025-08-17T18:40:54 PDT" name="setUpMethod" finished-at="2025-08-17T18:40:56 PDT" duration-ms="2456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="inputSimpleControls(java.lang.String,java.lang.String)[pri:0, instance:com.qa.Tests.AllControlsLogin@5cc126dc]" started-at="2025-08-17T18:40:56 PDT" name="inputSimpleControls" data-provider="loginData" finished-at="2025-08-17T18:40:57 PDT" duration-ms="1030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chandra]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chandra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputSimpleControls -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.AllControlsLogin@5cc126dc]" started-at="2025-08-17T18:40:57 PDT" name="tearDownDriver" finished-at="2025-08-17T18:40:57 PDT" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- com.qa.Tests.AllControlsLogin -->
+      <class name="com.qa.Tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:15 PDT" name="setUp" finished-at="2025-08-17T18:40:15 PDT" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:15 PDT" name="setUpMethod" finished-at="2025-08-17T18:40:30 PDT" duration-ms="14886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="onionToolWebTitle()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:30 PDT" name="onionToolWebTitle" description="Login test are executed - Assert Page Title" finished-at="2025-08-17T18:40:30 PDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onionToolWebTitle -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:30 PDT" name="tearDownDriver" finished-at="2025-08-17T18:40:30 PDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:30 PDT" name="setUpMethod" finished-at="2025-08-17T18:40:42 PDT" duration-ms="11652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="forgotPasswordLinkExists()[pri:1, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:42 PDT" name="forgotPasswordLinkExists" description="Forgot password link exist" finished-at="2025-08-17T18:40:42 PDT" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordLinkExists -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:42 PDT" name="tearDownDriver" finished-at="2025-08-17T18:40:43 PDT" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:43 PDT" name="setUpMethod" finished-at="2025-08-17T18:40:50 PDT" duration-ms="7242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="userLoginTest()[pri:2, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:50 PDT" name="userLoginTest" description="User Login Test" finished-at="2025-08-17T18:40:53 PDT" duration-ms="3511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginTest -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:com.qa.Tests.LoginTest@3c0fae6c]" started-at="2025-08-17T18:40:53 PDT" name="tearDownDriver" finished-at="2025-08-17T18:40:54 PDT" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- com.qa.Tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

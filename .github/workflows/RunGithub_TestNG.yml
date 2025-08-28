@@ -1,0 +1,82 @@
+name: JAVA CI with MAVEN TestNG
+
+on:
+   push:
+     branches: ["master","chandra_dev"]
+   pull_request:
+     branches: ["master","chandra_dev"]
+
+jobs:
+   build:
+     runs-on: windows-latest
+     env:
+       BASE_URL: https://dev.onion.gnapitech.org
+       CONTROLS_URL: https://chandu0609.github.io/SeleniumAllControlsRepo/login.html
+       BROWSER: chrome
+
+     steps:
+       - uses: actions/checkout@v4
+
+       - name: Set up JDK 17
+         uses: actions/setup-java@v4
+         with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+       - name: Build with Maven TestNG (headless)  
+         working-directory: ${{ github.workspace }}
+         run: |
+          mvn verify -Dheadless=true -DBaseurl="${{env.BASE_URL}}" -DBrowser="${{env.BROWSER}}" `
+          -Dthreadcount=3 `
+          -Dtestgroups="smoke"
+         continue-on-error: true
+
+    
+       - name: Generate Allure Report
+         run: mvn allure:report
+         continue-on-error: true
+
+       - name: List target directory
+         shell: pwsh
+         run: Get-ChildItem -Path target -Recurse
+       
+  
+       - name: Upload Extent Report
+         if: always() && (success() || failure())
+         uses: actions/upload-artifact@v4
+         with:
+          name: extent-report
+          path: reports/ExtentReport.html
+
+    
+       - name: Upload Allure Results
+         if: always() && (success() || failure())
+         uses: actions/upload-artifact@v4
+         with:
+          name: allure-results
+          path: target/allure-results
+
+       - name: Upload Allure HTML
+         if: always() && (success() || failure())
+         uses: actions/upload-artifact@v4
+         with:
+          name: allure-report-html
+          path: target/allure-report
+    
+       - name: Deploy Extent Report to GitHub Pages
+         if: always()
+         uses: peaceiris/actions-gh-pages@v4
+         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
+          destination_dir: extent-report
+
+       - name: Deploy Allure Report to GitHub Pages
+         if: always()
+         uses: peaceiris/actions-gh-pages@v4
+         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/allure-report
+          destination_dir: allure-report
+          force_orphan: true
